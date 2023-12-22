@@ -10,6 +10,16 @@ a {
     text-decoration: none;
     color: black;
 }
+header a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+header a:hover{
+    background-color: rgb(227, 173, 246);
+    border-radius: 10px;
+    color:  rgb(148, 0, 212);
+}
 
 ul,
 ol {
@@ -28,17 +38,22 @@ h3 {
     font-weight: 600;
 }
 
-/* Estilización mobile */
+
+
+/* -----------Estilización mobile--------- */
+
 /* Estilización header */
 header img {
     width: 150px;
 }
 
-/* header button {
-    background-color: blueviolet;
-} */
+
 
 /* Estilización main */
+main {
+    background-color: rgb(227, 173, 246);
+    padding: 1rem;
+}
 
 .titulo__pagina {
     padding-top: 2rem;
@@ -58,11 +73,9 @@ header img {
     font-size: 2rem;
 }
 
-/* Página Inicio */
-main {
-    background-color: rgb(227, 173, 246);
-}
 
+
+/* Página Inicio */
 .contenedor__inicio {
     margin: 1rem;
     display: flex;
@@ -81,7 +94,6 @@ main {
     width: 75vw;
     max-width: 350px;
     background-color: rgb(196, 132, 255);
-    /* background-color: rgb(192, 125, 255); */
     border-radius: 25px;
     overflow: hidden;
     align-items: center;
@@ -96,6 +108,8 @@ main {
     border-radius: 1rem;
 }
 
+
+
 /* Página Productos */
 .formulario__productos form {
     display: flex;
@@ -105,12 +119,11 @@ main {
     gap: 1rem;
 }
 
-.carousel-item {
+/* .carousel-item {
     border-radius: 20px;
     background-color: rgb(196, 132, 255);
     ;
-}
-
+} */
 
 .carousel__contenedor {
     display: flex;
@@ -133,9 +146,7 @@ main {
     border-radius: 15px;
 }
 
-.tarjeta__mediana {
-    max-width: 500px;
-}
+
 
 /* Página Noticias */
 
@@ -160,6 +171,8 @@ main {
     align-items: center;
     text-align: center;
 }
+
+
 
 /* Estilización footer */
 
@@ -230,16 +243,12 @@ footer .btn {
         margin: auto;
     }
 
-    .img__inicio {
-        width: 300px;
-    }
 
 
     /* Página productos */
     .formulario__productos form {
         flex-direction: row;
-        justify-content: space-around;
-        padding: 5rem;
+        justify-content: space-evenly;
     }
 
     .carousel__contenedor {
@@ -270,7 +279,6 @@ footer .btn {
     .noticias__importantes {
         grid-template-columns: 1.4fr 1fr;
         grid-template-rows: repeat(2, auto);
-
         max-width: 1500px;
         margin: 0 auto;
     }
