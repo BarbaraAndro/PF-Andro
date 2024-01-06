@@ -1,322 +1,266 @@
+@charset "UTF-8";
 /* Reseteo de CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Configuraciones iniciales */
 a {
-    text-decoration: none;
-    color: black;
-}
-header a{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
 }
 
-header a:hover{
-    background-color: rgb(227, 173, 246);
-    border-radius: 10px;
-    color:  rgb(148, 0, 212);
+header a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+
+header a:hover {
+  background-color: rgb(227, 173, 246);
+  border-radius: 10px;
+  color: rgb(148, 0, 212);
 }
 
 ul,
 ol {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: rgb(148, 0, 212);
-    font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(148, 0, 212);
+  font-weight: 600;
 }
-
-
-
-/* -----------Estilización mobile--------- */
-
-/* Estilización header */
-header img {
-    width: 150px;
-}
-
-
 
 /* Estilización main */
 main {
-    background-color: rgb(227, 173, 246);
-    padding: 1rem;
+  background-color: rgb(227, 173, 246);
+  padding: 1rem;
 }
 
 .titulo__pagina {
-    padding-top: 2rem;
-    color: rgb(102, 0, 149);
-    text-align: center;
-    padding-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+  padding-top: 2rem;
+  color: rgb(102, 0, 149);
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
 }
 
 .subtitulo__pagina {
-    color: rgb(103, 59, 124);
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+  color: rgb(103, 59, 124);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
-
-
-
-/* Página Inicio */
-.contenedor__inicio {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    gap: 2rem;
-    align-items: center;
-}
-
-.caja__inicio {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    width: 75vw;
-    max-width: 350px;
-    background-color: rgb(196, 132, 255);
-    border-radius: 25px;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-}
-
-.caja__inicio img {
-    min-width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-
-
-
-/* Página Productos */
-.formulario__productos form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-}
-
-/* .carousel-item {
-    border-radius: 20px;
-    background-color: rgb(196, 132, 255);
-    ;
-} */
-
-.carousel__contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    gap: 1rem;
-}
-
-.carousel__tarjeta {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    width: 80%;
-    max-width: 350px;
-    min-height: 350px;
-    padding: 2rem;
-    background-color: rgb(196, 132, 255);
-    border-radius: 15px;
-}
-
-
-
-/* Página Noticias */
-
-.noticias__importantes {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    width: 80vw;
-    max-width: 500px;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.caja__noticias {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: rgb(196, 132, 255);
-    border-radius: 25px;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-}
-
-
 
 /* Estilización footer */
-
 footer {
-    background-image: url("../Imagenes/flores-lilas.jpg");
-    color: white;
+  background-image: url("../Imagenes/flores-lilas.jpg");
+  color: white;
 }
 
 footer a {
-    color: white;
+  color: white;
 }
 
 footer .btn {
-    border: 1px rgb(178, 8, 178) solid;
-    background-color: violet;
-    border-radius: 5px;
-    padding: 5px;
+  border: 1px rgb(178, 8, 178) solid;
+  background-color: violet;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .footer__total {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
 }
 
 .footer__nav,
 .footer__redes,
 .footer_contacto {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  /* Estilización footer */
+  .footer__total {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+    max-width: 900px;
+  }
+  .footer__nav,
+  .footer__redes {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    gap: 1rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* Estilización header */
+header img {
+  width: 150px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilización desktop -----------------------------------------------------------------------------------------------------------------------*/
-
-
-@media (min-width:1200px) {
-
-    /* Estilización main */
-
-    /* Página inicio */
-    .caja__inicio {
-        display: flex;
-        flex-direction: row;
-        max-width: 1100px;
-        gap: 200px;
-        padding-right: 100px;
-        margin: auto;
-    }
-
-
-
-    /* Página productos */
-    .formulario__productos form {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .carousel__contenedor {
-        flex-direction: row;
-        gap: 2rem;
-        overflow: auto;
-        margin: 1.5rem;
-    }
-
-    .carousel__tarjeta {
-        flex-basis: 250px;
-        flex-shrink: 0;
-    }
-
-
-
-    /* Página noticias */
-    .noticias__importantes div:nth-child(1) {
-        grid-row: span 2;
-    }
-
-    .caja__noticias {
-        width: 100%;
-        max-width: 100%;
-        padding: 2rem;
-    }
-
-    .noticias__importantes {
-        grid-template-columns: 1.4fr 1fr;
-        grid-template-rows: repeat(2, auto);
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-    .noticias__importantes div:nth-child(1) {
-        grid-row: span 2;
-    }
-
-    .caja__noticias {
-        width: 100%;
-        max-width: 100%;
-        padding: 2rem;
-    }
-
-    /* Estilización footer */
-
-    .footer__total {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;
-        margin: auto;
-        max-width: 900px;
-    }
-
-    .footer__nav,
-    .footer__redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        gap: 1rem;
-    }
-
-
-    footer ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-
+/* Página Inicio */
+.contenedor__inicio {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  align-items: center;
 }
+
+.caja__inicio {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  width: 75vw;
+  max-width: 350px;
+  background-color: rgb(196, 132, 255);
+  border-radius: 25px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+.caja__inicio img {
+  min-width: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  /* Estilización main */
+  /* Página inicio */
+  .caja__inicio {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    gap: 200px;
+    padding-right: 100px;
+    margin: auto;
+  }
+}
+/* Página Noticias */
+.noticias__importantes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 80vw;
+  max-width: 500px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.caja__noticias {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: rgb(196, 132, 255);
+  border-radius: 25px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  /* Página noticias */
+  .noticias__importantes div:nth-child(1) {
+    grid-row: span 2;
+  }
+  .caja__noticias {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+  .noticias__importantes {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .noticias__importantes div:nth-child(1) {
+    grid-row: span 2;
+  }
+  .caja__noticias {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+/* Página Productos */
+.formulario__productos form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.carousel__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.carousel__tarjeta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  width: 80%;
+  max-width: 350px;
+  min-height: 350px;
+  padding: 2rem;
+  background-color: rgb(196, 132, 255);
+  border-radius: 15px;
+}
+
+@media (min-width: 1200px) {
+  /* Página productos */
+  .formulario__productos form {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .carousel__contenedor {
+    flex-direction: row;
+    gap: 2rem;
+    overflow: auto;
+    margin: 1.5rem;
+  }
+  .carousel__tarjeta {
+    flex-basis: 250px;
+    flex-shrink: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
