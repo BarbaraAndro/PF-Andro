@@ -5,46 +5,40 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
+    @include mq-desktop{
+        justify-content: space-evenly;
+    }
 }
 
-.carousel__contenedor {
+
+.producto {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
     gap: 1rem;
-}
 
-.carousel__tarjeta {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    width: 80%;
-    max-width: 350px;
-    min-height: 350px;
-    padding: 2rem;
-    background-color: rgb(196, 132, 255);
-    border-radius: 15px;
-}
-
-@media (min-width:1200px) {
-        /* Página productos */
-        .formulario__productos form {
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        width: 80%;
+        max-width: 350px;
+        min-height: 350px;
+        padding: 2rem;
+        background-color: rgb(196, 132, 255);
+        border-radius: 15px;
+    }
     
-        .carousel__contenedor {
-            flex-direction: row;
-            gap: 2rem;
-            overflow: auto;
-            margin: 1.5rem;
-        }
-    
-        .carousel__tarjeta {
+    @include mq-desktop{
+        flex-direction: row;
+        gap: 2rem;
+        overflow: auto;
+        margin: 1.5rem;
+        &__card{
             flex-basis: 250px;
             flex-shrink: 0;
         }
-    
+    }
 }

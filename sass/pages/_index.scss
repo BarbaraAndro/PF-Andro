@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.caja__inicio {
+.inicio {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -21,22 +21,14 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-}
-
-.caja__inicio img {
-    min-width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-
-
-@media (min-width:1200px) {
-        /* Estilización main */
-
-    /* Página inicio */
-    .caja__inicio {
+    &__img{
+        min-width: 300px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    @include mq-desktop{
         display: flex;
         flex-direction: row;
         max-width: 1100px;
@@ -44,5 +36,4 @@
         padding-right: 100px;
         margin: auto;
     }
-
 }
