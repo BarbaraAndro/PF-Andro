@@ -1,4 +1,10 @@
-/* Estilización header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(252, 240, 255);
+}
+
 header img {
     width: 150px;
 }
