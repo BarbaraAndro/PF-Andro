@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables */
 /* Reseteo de CSS */
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 /* Configuraciones iniciales */
 a {
   text-decoration: none;
-  color: black;
+  color: texto;
 }
 
 header a {
@@ -33,13 +34,6 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  color: rgb(148, 0, 212);
-  font-weight: 600;
-}
-
 /* Estilización main */
 main {
   background-color: rgb(227, 173, 246);
@@ -53,6 +47,7 @@ main {
   padding-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
+  margin-top: 2rem;
 }
 
 .subtitulo__pagina {
@@ -83,6 +78,10 @@ footer {
 }
 .footer__link {
   color: white;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  font-size: 1.1rem;
 }
 @media (min-width: 1200px) {
   .footer {
@@ -171,7 +170,7 @@ footer .btn {
 }
 
 .informacion1 {
-  background-color: rgb(191, 127, 255);
+  background-color: rgb(196, 132, 255);
   border-radius: 2rem;
   width: 70%;
   padding: 3rem;
@@ -204,10 +203,8 @@ footer .btn {
   border-radius: 2rem;
   margin: auto;
 }
-.informacion__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.informacion__card:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
 }
 .informacion__titulo {
   font-size: 2rem;
@@ -236,12 +233,13 @@ footer .btn {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(205, 148, 255);
+  background-color: rgb(196, 132, 255);
   border-radius: 15px;
   width: 80%;
   gap: 1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
 }
-.creadores__titulo, .creadores__link {
+.creadores__titulo, .activistas__link, .creadores__link {
   text-align: center;
 }
 .creadores__img {
@@ -250,7 +248,12 @@ footer .btn {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px rgb(255, 80, 232);
+}
+.creadores__img:hover {
+  transform: scale(1.05);
+  background-color: rgb(201, 151, 248);
+  border: 5px solid rgb(255, 191, 246);
+  outline: 5px solid rgb(255, 80, 232);
 }
 .creadores__link {
   text-decoration: none;
@@ -265,9 +268,95 @@ footer .btn {
   }
 }
 
+.activistas {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.activistas__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(196, 132, 255);
+  border-radius: 15px;
+  width: 80%;
+  gap: 1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+}
+.activistas__titulo {
+  text-align: center;
+}
+.activistas__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.activistas__img:hover {
+  transform: scale(1.05);
+  background-color: rgb(201, 151, 248);
+  border: 5px solid rgb(255, 191, 246);
+  outline: 5px solid rgb(255, 80, 232);
+}
+.activistas__link {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 1200px) {
+  .activistas {
+    flex-direction: row;
+  }
+  .activistas__card {
+    max-width: 400px;
+  }
+}
+
+.documentales {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.documentales__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(196, 132, 255);
+  border-radius: 15px;
+  width: 80%;
+  gap: 1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+}
+.documentales__titulo {
+  text-align: center;
+}
+.documentales__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.documentales__img:hover {
+  transform: scale(1.05);
+  background-color: rgb(201, 151, 248);
+  border: 5px solid rgb(255, 191, 246);
+  outline: 5px solid rgb(255, 80, 232);
+}
+@media (min-width: 1200px) {
+  .documentales {
+    flex-direction: row;
+  }
+  .documentales__card {
+    max-width: 400px;
+  }
+}
+
 .titulo-zona {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .zona {
@@ -287,15 +376,22 @@ footer .btn {
   width: 300px;
   background-color: rgb(196, 132, 255);
   border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+}
+.zona__card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.425);
+  background-color: rgb(201, 151, 248);
 }
 .zona__img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 .zona__titulo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
 }
 .zona__descripción {
@@ -313,7 +409,6 @@ footer .btn {
   }
 }
 
-/* Página Noticias */
 .noticias {
   display: grid;
   gap: 2rem;
@@ -329,7 +424,12 @@ footer .btn {
   justify-items: center;
   max-width: 80vw;
   border-radius: 50px;
-  padding: 2rem;
+  padding: 1rem;
+}
+.noticias__tarjeta:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.425);
+  background-color: rgb(201, 151, 248);
 }
 .noticias__img {
   border-radius: 50px;
@@ -348,25 +448,36 @@ footer .btn {
 
 .noticias2 {
   display: flex;
+  flex-direction: column;
+  max-width: 85vw;
   gap: 1rem;
   justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding: 0.5rem;
 }
 .noticias2__tarjeta {
   display: flex;
   flex-direction: column;
-  background-color: rgb(196, 132, 255);
-  width: 80%;
-  border-radius: 30px;
+  gap: 2rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: auto;
 }
-.noticias2__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  padding-bottom: 1rem;
+.noticias2__tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.425);
+  background-color: rgb(217, 142, 244);
 }
-.noticias2__titulo, .noticias2__texto {
-  padding: 0 2rem;
+.noticias2__titulo {
+  padding: 0 1rem;
+  color: rgb(103, 59, 124);
+}
+.noticias2__texto {
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: black;
 }
 @media (min-width: 1200px) {
   .noticias2 {
@@ -409,6 +520,14 @@ footer .btn {
   padding: 2rem;
   background-color: rgb(196, 132, 255);
   border-radius: 15px;
+}
+.producto__card:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.425);
+  background-color: rgb(201, 151, 248);
+}
+.producto__titulo {
+  font-size: 1.5rem;
 }
 @media (min-width: 1200px) {
   .producto {

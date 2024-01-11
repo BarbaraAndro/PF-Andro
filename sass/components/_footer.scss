@@ -19,6 +19,10 @@ footer{
 
     &__link{
         color: white;
+        &:hover{
+            text-decoration: underline;
+            font-size: 1.1rem;
+        }
     }
 
     @include mq-desktop {

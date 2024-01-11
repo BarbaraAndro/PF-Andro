@@ -1,3 +1,11 @@
+/* Variables */
+$color-fondo:rgb(227, 173, 246);
+$color-titulo-card: rgb(196, 132, 255);
+$color-titulo-secciones:rgb(103, 59, 124);
+$color-titulo-pagina:rgb(102, 0, 149);
+$color-texto: black;
+$font-titulo: 'Montserrat', sans-serif;
+
 /* Reseteo de CSS */
 * {
     margin: 0;
@@ -9,7 +17,7 @@
 /* Configuraciones iniciales */
 a {
     text-decoration: none;
-    color: black;
+    color: texto;
 }
 header a{
     font-family: 'Montserrat', sans-serif;
@@ -32,32 +40,25 @@ img {
     max-width: 100%;
 }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: rgb(148, 0, 212);
-    font-weight: 600;
-}
-
-
 
 /* Estilización main */
 main {
-    background-color: rgb(227, 173, 246);
+    background-color: $color-fondo;
     padding: 1rem;
 }
 
 .titulo__pagina {
     padding-top: 2rem;
-    color: rgb(102, 0, 149);
+    color: $color-titulo-pagina;
     text-align: center;
     padding-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
+    margin-top: 2rem;
 }
 
 .subtitulo__pagina {
-    color: rgb(103, 59, 124);
+    color: $color-titulo-secciones;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
