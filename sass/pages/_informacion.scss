@@ -4,12 +4,19 @@
     width: 70%;
     padding: 3rem;
     margin: 0 auto;
+
     &__titulo {
         font-size: 2rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
     &__texto {
         font-size: 1rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
     @include mq-desktop {
         max-width: 800px;
     }
@@ -21,6 +28,9 @@
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 3rem;
+    max-width: 85vw;
+    margin: auto;
+
     &__card {
         display: flex;
         flex-direction: column;
@@ -28,35 +38,49 @@
         padding: 2rem;
         border: 2px solid black;
         border-radius: 2rem;
-        margin: auto;
-        &:hover{
-            box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.425);
+        justify-content: stretch;
+
+        &:hover {
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
 
         }
     }
-    &__titulo{
+
+    &__titulo {
         font-size: 2rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
-    &__texto{
+
+    &__texto {
         font-size: 1.5rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
 
     @include mq-desktop {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        &_card{
+        max-width: 1100px;
+        margin: auto;
+
+        &_card {
             max-width: 1000px;
         }
     }
 
 }
 
-.creadores{
+.creadores {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-top: 2rem;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
 
     &__card {
         display: flex;
@@ -67,16 +91,23 @@
         width: 80%;
         gap: 1rem;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+        justify-content: stretch;
     }
-    &__titulo{
+
+    &__titulo {
         text-align: center;
+        font-size: 1.3rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
     &__img {
         width: 100%;
         height: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+
         &:hover {
             transform: scale(1.05);
             background-color: rgb(201, 151, 248);
@@ -84,14 +115,33 @@
             outline: 5px solid rgb(255, 80, 232);
         }
     }
+
     &__link {
         @extend .creadores__titulo;
         text-decoration: none;
         color: black;
+        font-family: $font-titulo;
+        font-weight: 400;
+    }
+
+    @include mq-tablet {
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 800px;
+        margin: auto;
+        justify-items: center;
+
+        &__card {
+            max-width: 400px;
+            justify-content: stretch;
+        }
     }
 
     @include mq-desktop {
+        display: flex;
         flex-direction: row;
+        max-width: 1100px;
+        margin: auto;
 
         &__card {
             max-width: 400px;
@@ -104,6 +154,10 @@
     flex-direction: column;
     gap: 3rem;
     margin-top: 2rem;
+    max-width: 85vw;
+    margin: auto;
+    align-items: center;
+
 
     &__card {
         display: flex;
@@ -115,15 +169,21 @@
         gap: 1rem;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
     }
-    &__titulo{
+
+    &__titulo {
         text-align: center;
+        font-size: 1.3rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
     &__img {
         width: 100%;
         height: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+
         &:hover {
             transform: scale(1.05);
             background-color: rgb(201, 151, 248);
@@ -131,14 +191,33 @@
             outline: 5px solid rgb(255, 80, 232);
         }
     }
+
     &__link {
         @extend .creadores__titulo;
         text-decoration: none;
         color: black;
+        font-family: $font-titulo;
+        font-weight: 400;
+    }
+
+    @include mq-tablet {
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 800px;
+        margin: auto;
+        justify-items: center;
+
+        &__card {
+            max-width: 400px;
+            justify-content: stretch;
+        }
     }
 
     @include mq-desktop {
+        display: flex;
         flex-direction: row;
+        max-width: 1100px;
+        margin: auto;
 
         &__card {
             max-width: 400px;
@@ -151,6 +230,9 @@
     flex-direction: column;
     gap: 3rem;
     margin-top: 2rem;
+    margin: auto;
+    align-items: center;
+
 
     &__card {
         display: flex;
@@ -162,15 +244,21 @@
         gap: 1rem;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
     }
-    &__titulo{
+
+    &__titulo {
         text-align: center;
+        font-size: 1.3rem;
+        font-family: $font-titulo;
+        font-weight: 400;
     }
+
     &__img {
         width: 100%;
         height: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+
         &:hover {
             transform: scale(1.05);
             background-color: rgb(201, 151, 248);
@@ -178,8 +266,25 @@
             outline: 5px solid rgb(255, 80, 232);
         }
     }
+
+    @include mq-tablet {
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 800px;
+        margin: auto;
+        justify-items: center;
+
+        &__card {
+            max-width: 400px;
+            justify-content: stretch;
+        }
+    }
+
     @include mq-desktop {
+        display: flex;
         flex-direction: row;
+        max-width: 1100px;
+        margin: auto;
 
         &__card {
             max-width: 400px;

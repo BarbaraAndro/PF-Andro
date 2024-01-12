@@ -1,5 +1,5 @@
 /* Página Inicio */
-.contenedor__inicio {
+.inicio {
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -7,24 +7,26 @@
     padding-bottom: 2rem;
     gap: 3rem;
     align-items: center;
-}
+    width: 85vw;
+    margin: auto;
 
-.inicio {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 10rem;
-    width: 75vw;
-    max-width: 350px;
-    background-color: $color-titulo-card;
-    border-radius: 25px;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 3rem;
+        width: 75vw;
+        // max-width: 600px;
+        background-color: $color-titulo-card;
+        border-radius: 25px;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
 
-    &:hover {
-        transform: scale(1.05);
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__img {
@@ -32,15 +34,16 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
-        border-radius: 30rem;
     }
 
     @include mq-desktop {
-        display: flex;
-        flex-direction: row;
-        max-width: 1100px;
-        gap: 200px;
-        padding-right: 100px;
-        margin: auto;
+        &__card {
+            display: flex;
+            flex-direction: row;
+            max-width: 1100px;
+            gap: 200px;
+            padding-right: 100px;
+            margin: auto;
+        }
     }
 }

@@ -1,8 +1,8 @@
 /* Variables */
-$color-fondo:rgb(227, 173, 246);
+$color-fondo: rgb(227, 173, 246);
 $color-titulo-card: rgb(196, 132, 255);
-$color-titulo-secciones:rgb(103, 59, 124);
-$color-titulo-pagina:rgb(102, 0, 149);
+$color-titulo-secciones: rgb(103, 59, 124);
+$color-titulo-pagina: rgb(102, 0, 149);
 $color-texto: black;
 $font-titulo: 'Montserrat', sans-serif;
 
@@ -19,15 +19,16 @@ a {
     text-decoration: none;
     color: texto;
 }
-header a{
-    font-family: 'Montserrat', sans-serif;
+
+header a {
+    font-family: $font-titulo;
     font-size: 2.5rem;
 }
 
-header a:hover{
+header a:hover {
     background-color: rgb(227, 173, 246);
     border-radius: 10px;
-    color:  rgb(148, 0, 212);
+    color: rgb(148, 0, 212);
 }
 
 ul,
@@ -52,8 +53,9 @@ main {
     color: $color-titulo-pagina;
     text-align: center;
     padding-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-titulo;
     font-size: 3rem;
+    font-weight: 600;
     margin-top: 2rem;
 }
 
@@ -62,18 +64,20 @@ main {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-titulo;
+    font-weight: 400;
     font-size: 2rem;
+    margin: 2rem 0;
 }
 
-@mixin mq-tablet{
-    @media (min-width:768px){
+@mixin mq-tablet {
+    @media (min-width:768px) and (max-width:1199px) {
         @content;
     }
 }
 
-@mixin mq-desktop{
-    @media (min-width:1200px){
+@mixin mq-desktop {
+    @media (min-width:1200px) {
         @content;
     }
 }

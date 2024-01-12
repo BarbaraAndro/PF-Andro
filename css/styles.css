@@ -47,6 +47,7 @@ main {
   padding-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
+  font-weight: 600;
   margin-top: 2rem;
 }
 
@@ -56,11 +57,15 @@ main {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 2rem;
+  margin: 2rem 0;
 }
 
 footer {
   background-image: url("../imagenes/flores-lilas.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -124,7 +129,7 @@ footer .btn {
 }
 
 /* Página Inicio */
-.contenedor__inicio {
+.inicio {
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -132,15 +137,15 @@ footer .btn {
   padding-bottom: 2rem;
   gap: 3rem;
   align-items: center;
+  width: 85vw;
+  margin: auto;
 }
-
-.inicio {
+.inicio__card {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 10rem;
+  gap: 3rem;
   width: 75vw;
-  max-width: 350px;
   background-color: rgb(196, 132, 255);
   border-radius: 25px;
   overflow: hidden;
@@ -148,7 +153,7 @@ footer .btn {
   text-align: center;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
 }
-.inicio:hover {
+.inicio__card:hover {
   transform: scale(1.05);
 }
 .inicio__img {
@@ -156,10 +161,9 @@ footer .btn {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 30rem;
 }
 @media (min-width: 1200px) {
-  .inicio {
+  .inicio__card {
     display: flex;
     flex-direction: row;
     max-width: 1100px;
@@ -178,9 +182,13 @@ footer .btn {
 }
 .informacion1__titulo {
   font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .informacion1__texto {
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .informacion1 {
@@ -193,6 +201,8 @@ footer .btn {
   flex-direction: column;
   gap: 3rem;
   margin-bottom: 3rem;
+  max-width: 85vw;
+  margin: auto;
 }
 .informacion__card {
   display: flex;
@@ -201,22 +211,28 @@ footer .btn {
   padding: 2rem;
   border: 2px solid black;
   border-radius: 2rem;
-  margin: auto;
+  justify-content: stretch;
 }
 .informacion__card:hover {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
 }
 .informacion__titulo {
   font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .informacion__texto {
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .informacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 1100px;
+    margin: auto;
   }
   .informacion_card {
     max-width: 1000px;
@@ -228,6 +244,9 @@ footer .btn {
   flex-direction: column;
   gap: 3rem;
   margin-top: 2rem;
+  align-items: center;
+  max-width: 85vw;
+  margin: auto;
 }
 .creadores__card {
   display: flex;
@@ -238,9 +257,13 @@ footer .btn {
   width: 80%;
   gap: 1rem;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+  justify-content: stretch;
 }
 .creadores__titulo, .activistas__link, .creadores__link {
   text-align: center;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .creadores__img {
   width: 100%;
@@ -258,10 +281,28 @@ footer .btn {
 .creadores__link {
   text-decoration: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .creadores {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 800px;
+    margin: auto;
+    justify-items: center;
+  }
+  .creadores__card {
+    max-width: 400px;
+    justify-content: stretch;
+  }
 }
 @media (min-width: 1200px) {
   .creadores {
+    display: flex;
     flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
   }
   .creadores__card {
     max-width: 400px;
@@ -273,6 +314,9 @@ footer .btn {
   flex-direction: column;
   gap: 3rem;
   margin-top: 2rem;
+  max-width: 85vw;
+  margin: auto;
+  align-items: center;
 }
 .activistas__card {
   display: flex;
@@ -286,6 +330,9 @@ footer .btn {
 }
 .activistas__titulo {
   text-align: center;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .activistas__img {
   width: 100%;
@@ -303,10 +350,28 @@ footer .btn {
 .activistas__link {
   text-decoration: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .activistas {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 800px;
+    margin: auto;
+    justify-items: center;
+  }
+  .activistas__card {
+    max-width: 400px;
+    justify-content: stretch;
+  }
 }
 @media (min-width: 1200px) {
   .activistas {
+    display: flex;
     flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
   }
   .activistas__card {
     max-width: 400px;
@@ -318,6 +383,8 @@ footer .btn {
   flex-direction: column;
   gap: 3rem;
   margin-top: 2rem;
+  margin: auto;
+  align-items: center;
 }
 .documentales__card {
   display: flex;
@@ -331,6 +398,9 @@ footer .btn {
 }
 .documentales__titulo {
   text-align: center;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .documentales__img {
   width: 100%;
@@ -345,9 +415,25 @@ footer .btn {
   border: 5px solid rgb(255, 191, 246);
   outline: 5px solid rgb(255, 80, 232);
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .documentales {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 800px;
+    margin: auto;
+    justify-items: center;
+  }
+  .documentales__card {
+    max-width: 400px;
+    justify-content: stretch;
+  }
+}
 @media (min-width: 1200px) {
   .documentales {
+    display: flex;
     flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
   }
   .documentales__card {
     max-width: 400px;
@@ -364,6 +450,7 @@ footer .btn {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
 }
 .zona__card {
   display: flex;
@@ -393,15 +480,32 @@ footer .btn {
 .zona__titulo {
   font-size: 1.5rem;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .zona__descripción {
   font-size: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .zona {
+    flex-direction: row;
+    gap: 2rem;
+    overflow: auto;
+    max-width: 550px;
+    margin: auto;
+  }
+  .zona__card {
+    flex-basis: 250px;
+    flex-shrink: 0;
+  }
 }
 @media (min-width: 1200px) {
   .zona {
     flex-direction: row;
     gap: 2rem;
     overflow: auto;
+    max-width: 1140px;
+    margin: auto;
   }
   .zona__card {
     flex-basis: 250px;
@@ -437,12 +541,20 @@ footer .btn {
 }
 @media (min-width: 1200px) {
   .noticias {
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr 6fr;
     grid-template-rows: auto auto;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .noticias__img {
+    max-width: 300px;
+    align-self: center;
   }
   .noticias :nth-child(1) {
     grid-row: span 2;
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -451,9 +563,7 @@ footer .btn {
   flex-direction: column;
   max-width: 85vw;
   gap: 1rem;
-  justify-content: center;
   margin: auto;
-  align-items: center;
   padding: 0.5rem;
 }
 .noticias2__tarjeta {
@@ -463,7 +573,7 @@ footer .btn {
   padding: 1rem;
   border: 2px solid black;
   border-radius: 2rem;
-  margin: auto;
+  justify-content: stretch;
 }
 .noticias2__tarjeta:hover {
   transform: scale(1.05);
@@ -473,15 +583,21 @@ footer .btn {
 .noticias2__titulo {
   padding: 0 1rem;
   color: rgb(103, 59, 124);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 .noticias2__texto {
   padding: 0 1rem;
   font-size: 1rem;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .noticias2 {
     flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
   }
   .noticias2__tarjeta {
     max-width: 400px;
@@ -520,6 +636,7 @@ footer .btn {
   padding: 2rem;
   background-color: rgb(196, 132, 255);
   border-radius: 15px;
+  margin: 2rem 0;
 }
 .producto__card:hover {
   transform: scale(1.02);
@@ -528,6 +645,25 @@ footer .btn {
 }
 .producto__titulo {
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.producto__img {
+  border-radius: 50%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .producto {
+    flex-direction: row;
+    gap: 2rem;
+    overflow: auto;
+    margin: 1.5rem;
+    max-width: 550px;
+    margin: auto;
+  }
+  .producto__card {
+    flex-basis: 250px;
+    flex-shrink: 0;
+  }
 }
 @media (min-width: 1200px) {
   .producto {
@@ -535,6 +671,8 @@ footer .btn {
     gap: 2rem;
     overflow: auto;
     margin: 1.5rem;
+    max-width: 1100px;
+    margin: auto;
   }
   .producto__card {
     flex-basis: 250px;
