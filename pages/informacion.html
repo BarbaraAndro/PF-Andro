@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explorá el mundo del veganismo en nuestro sitio web dedicado a la vida vegana. Descubre información esencial, productos deliciosos y saludables, encuentra lugares veganos para disfrutar de deliciosas comidas y mantente actualizado con las últimas noticias sobre el veganismo.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        content="Encontrá información sobre las preguntas más frecuentes relacionadas al mundo del veganismo. Qué es es veganismo y que hay que tener en cuenta a la hora de seguir esta filosofía de vida y por consecuencia la dieta a base de plantas.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../imagenes/blopy.jpeg">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +24,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="../index.html"><img class="rounded-4" src="../imagenes/fondo.jpeg"
+                <a class="navbar-brand" href="../index.html"><img class="rounded-4 logo" src="../imagenes/blopy.jpeg"
                         alt="Logo de la página"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -52,7 +56,10 @@
 
 
     <main>
-        <h2 class="titulo__pagina">Información vegana</h2>
+        <section class="portada portadainformacion">
+            <h1 class="portada__titulo">Informacion Vegana</h1>
+        </section>
+
         <section class="informacion1">
             <h2 class="informacion1__titulo">Qué es ser vegano?</h2>
             <p class="informacion1__texto">El veganismo es una filosofía y forma de vida que busca excluir, en la medida
@@ -60,16 +67,16 @@
                 su uso para la comida, ropa, o cualquier otro propósito.</p>
         </section>
 
-        <h3 class="subtitulo__pagina">Algunas preguntas frecuentes</h3>
+        <h2 class="subtitulo__pagina">Algunas preguntas frecuentes</h2>
         <section class="informacion">
             <article class="informacion__card">
-                <h4 class="informacion__titulo">Debo suplementarme?</h4>
+                <h3 class="informacion__titulo">Debo suplementarme?</h3>
                 <p class="informacion__texto">Una alimentación basada en plantas, controlada, es capaz de brindarte
                     todos las vitaminas y minerales necesarios para un correcto funcionamiento del cuerpo. A excepción
                     de la vitamina B12 que debe suplementarse</p>
             </article>
             <article class="informacion__card">
-                <h4 class="informacion__titulo">Qué son las trazas?</h4>
+                <h3 class="informacion__titulo">Qué son las trazas?</h3>
                 <p class="informacion__texto">Esto es lo que tiende a confundir a la gente al principio ya que, que un
                     producto tenga trazas de origen animal, no implica que el producto no sea vegetal. Esto se debe a
                     que las trazas se indican para las personas con alergias a dichos ingredientes pero es debido a una
@@ -77,14 +84,14 @@
                     tiene dichos ingredientes como parte de la preparación.</p>
             </article>
             <article class="informacion__card">
-                <h4 class="informacion__titulo">Y ahora? De donde saco el calcio?</h4>
+                <h3 class="informacion__titulo">Y ahora? De donde saco el calcio?</h3>
                 <p class="informacion__texto">Cuando hablamos de calcio es común pensar en la leche de vaca. Sin embargo
                     es un mineral que se encuentra en el mundo vegetal inclusive superando al aporte de la leche, dentro
                     de los alimentos más ricos en este mineral podemos encontrar las almendras, semillas de sésamo,
                     brocoli, garbanzos, como así también en bebidas vegetales y tofu que son enriquecidos.</p>
             </article>
             <article class="informacion__card">
-                <h4 class="informacion__titulo">Dieta vegana = 0 colesterol</h4>
+                <h3 class="informacion__titulo">Dieta vegana = 0 colesterol</h3>
                 <p class="informacion__texto">Saber que una alimentación basada en plantas involucra una ingesta de 0%
                     colesterol es uno de los tantos beneficios de no consumir animales. Este dato nos ayuda a descartar
                     alimentos que no sean veganos , ya que al leer las etiquetas y detectar algún porcentaje de
@@ -92,7 +99,7 @@
             </article>
         </section>
 
-        <h3 class="subtitulo__pagina">Creadores de recetas veganas</h3>
+        <h2 class="subtitulo__pagina">Creadores de recetas veganas</h2>
         <section class="creadores">
             <article class="creadores__card">
                 <img class="creadores__img" src="../imagenes/soyvelen.jpeg" alt="Foto de Soyvelen">
@@ -116,48 +123,48 @@
             </article>
         </section>
 
-        <h3 class="subtitulo__pagina">Activistas veganos</h3>
+        <h2 class="subtitulo__pagina">Activistas veganos</h2>
         <section class="activistas">
             <article class="activistas__card">
                 <img class="activistas__img" src="../imagenes/soledadbarruti.jpeg" alt="Foto de Soledad Barruti">
-                <h3 class="activistas__titulo">Soledad Barruti</h3>
+                <h4 class="activistas__titulo">Soledad Barruti</h4>
                 <a class="activistas__link" href="https://www.instagram.com/solesbarruti/?hl=es">@solesbarruti</a>
             </article>
             <article class="activistas__card">
                 <img class="activistas__img" src="../imagenes/voicot.jpeg" alt="Foto de perfil de Voicot">
-                <h3 class="activistas__titulo">Voicot</h3>
-                <a class="activistas__link" href="https://www.instagram.com/voicot/?hl=es">@nutriloca</a>
+                <h4 class="activistas__titulo">Voicot</h4>
+                <a class="activistas__link" href="https://www.instagram.com/voicot/?hl=es">@voicot</a>
             </article>
             <article class="activistas__card">
                 <img class="activistas__img" src="../imagenes/ferpieroni.jpeg" alt="Foto de Fernando Pieroni">
-                <h3 class="activistas__titulo">Fernando Pieroni</h3>
+                <h4 class="activistas__titulo">Fernando Pieroni</h4>
                 <a class="activistas__link" href="https://www.instagram.com/fer_pieroni/?hl=es">@ferpieroni</a>
             </article>
             <article class="activistas__card">
                 <img class="activistas__img" src="../imagenes/evelynre.jpeg" alt="Foto de doctora Evelyn Re">
-                <h3 class="activistas__titulo">Dra. Evelyn Re</h3>
+                <h4 class="activistas__titulo">Dra. Evelyn Re</h4>
                 <a class="activistas__link" href="https://www.instagram.com/dra.evelynre/">@dra.evelynre</a>
             </article>
         </section>
 
-        <h3 class="subtitulo__pagina">Documentales y videos recomendados</h3>
+        <h2 class="subtitulo__pagina">Documentales y videos recomendados</h2>
         <section class="documentales">
             <article class="documentales__card">
                 <img class="documentales__img" src="../imagenes/whatthehealth.jpeg"
                     alt="Foto de documental What the Health">
-                <h3 class="documentales__titulo">What the health</h3>
+                <h4 class="documentales__titulo">What the health</h4>
             </article>
             <article class="documentales__card">
                 <img class="documentales__img" src="../imagenes/cowspiracy.jpeg" alt="Foto de documental Cowspiracy">
-                <h3 class="documentales__titulo">Cowspiracy</h3>
+                <h4 class="documentales__titulo">Cowspiracy</h4>
             </article>
             <article class="documentales__card">
                 <img class="documentales__img" src="../imagenes/earthlings.jpeg" alt="Foto de documental Earthlings">
-                <h3 class="documentales__titulo">Earthlings</h3>
+                <h4 class="documentales__titulo">Earthlings</h4>
             </article>
             <article class="documentales__card">
                 <img class="documentales__img" src="../imagenes/dominion.jpeg" alt="Foto de documental Dominion">
-                <h3 class="documentales__titulo">Dominion</h3>
+                <h4 class="documentales__titulo">Dominion</h4>
             </article>
         </section>
 
@@ -179,9 +186,9 @@
             <div class="footer__redes">
                 <h4>Redes sociales</h4>
                 <ul>
-                    <li class="footer__link">Facebook</li>
-                    <li class="footer__link">Instagram</li>
-                    <li class="footer__link">Tik tok</li>
+                    <li class="footer__link"><i class="fa-brands fa-facebook"></i> Facebook </li>
+                    <li class="footer__link"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li class="footer__link"><i class="fa-brands fa-tiktok"></i> Tik tok</li>
                 </ul>
             </div>
 
@@ -190,11 +197,11 @@
                     <h4>Dejanos un mensaje</h4>
 
                     <div><label for="nombre-usuario">Nombre y apellido</label></div>
-                    <div><input type="text" id="nombre-usuario"></div>
+                    <div><input class="form" type="text" id="nombre-usuario"></div>
                     <div><label for="email-usuario">Email</label></div>
-                    <div><input type="email" id="email-usuario"></div>
+                    <div><input class="form" type="email" id="email-usuario"></div>
                     <div><label for="mensaje-usuario">Mensaje</label></div>
-                    <div><textarea name="" id="mensaje-usuario" cols="30" rows="5"></textarea></div>
+                    <div><textarea class="form" name="" id="mensaje-usuario" cols="30" rows="5"></textarea></div>
                     <div><input class="btn" type="submit" value="Enviar">
                         <input class="btn" type="reset" value="Borrar">
                     </div>

@@ -4,6 +4,8 @@
     width: 70%;
     padding: 3rem;
     margin: 0 auto;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
 
     &__titulo {
         font-size: 2rem;
@@ -39,10 +41,10 @@
         border: 2px solid black;
         border-radius: 2rem;
         justify-content: stretch;
+        background-color: rgb(217, 142, 244);
 
         &:hover {
             box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
-
         }
     }
 
@@ -50,10 +52,11 @@
         font-size: 2rem;
         font-family: $font-titulo;
         font-weight: 400;
+        text-decoration: underline;
     }
 
     &__texto {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: $font-titulo;
         font-weight: 400;
     }
@@ -107,6 +110,7 @@
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.05);
@@ -122,6 +126,7 @@
         color: black;
         font-family: $font-titulo;
         font-weight: 400;
+        text-decoration: underline;
     }
 
     @include mq-tablet {
@@ -150,31 +155,13 @@
 }
 
 .activistas {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
-    max-width: 85vw;
-    margin: auto;
-    align-items: center;
-
-
+    @extend .creadores;
     &__card {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        background-color: $color-titulo-card;
-        border-radius: 15px;
-        width: 80%;
-        gap: 1rem;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+        @extend .creadores__card;
     }
 
     &__titulo {
-        text-align: center;
-        font-size: 1.3rem;
-        font-family: $font-titulo;
-        font-weight: 400;
+        @extend .creadores__titulo;
     }
 
     &__img {
@@ -183,6 +170,7 @@
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.05);
@@ -198,6 +186,7 @@
         color: black;
         font-family: $font-titulo;
         font-weight: 400;
+        text-decoration: underline;
     }
 
     @include mq-tablet {
@@ -226,14 +215,7 @@
 }
 
 .documentales {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
-    margin: auto;
-    align-items: center;
-
-
+    @extend .creadores;
     &__card {
         display: flex;
         flex-direction: column;
@@ -258,6 +240,7 @@
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.05);

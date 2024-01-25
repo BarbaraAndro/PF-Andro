@@ -2,7 +2,7 @@
 $color-fondo: rgb(227, 173, 246);
 $color-titulo-card: rgb(196, 132, 255);
 $color-titulo-secciones: rgb(103, 59, 124);
-$color-titulo-pagina: rgb(102, 0, 149);
+$color-titulo-pagina: rgb(213, 139, 248);
 $color-texto: black;
 $font-titulo: 'Montserrat', sans-serif;
 
@@ -20,17 +20,6 @@ a {
     color: texto;
 }
 
-header a {
-    font-family: $font-titulo;
-    font-size: 2.5rem;
-}
-
-header a:hover {
-    background-color: rgb(227, 173, 246);
-    border-radius: 10px;
-    color: rgb(148, 0, 212);
-}
-
 ul,
 ol {
     list-style: none;
@@ -41,22 +30,10 @@ img {
     max-width: 100%;
 }
 
-
 /* Estilización main */
 main {
     background-color: $color-fondo;
-    padding: 1rem;
-}
-
-.titulo__pagina {
-    padding-top: 2rem;
-    color: $color-titulo-pagina;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-family: $font-titulo;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .subtitulo__pagina {

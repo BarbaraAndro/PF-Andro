@@ -14,6 +14,8 @@
         max-width: 80vw;
         border-radius: 50px;
         padding: 1rem;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.03);
@@ -28,21 +30,27 @@
     }
 
     @include mq-desktop {
-        grid-template-columns: 2fr 6fr;
+        grid-template-columns: 2fr 8fr;
         grid-template-rows: auto auto;
         max-width: 1100px;
         margin: auto;
 
         &__img {
-            max-width: 300px;
             align-self: center;
         }
 
+        &__img2 {
+            height: 200px;
+            object-fit: contain;
+        }
+
+        &__parrafo{
+            font-size: 1.5rem;
+        }
         :nth-child(1) {
             grid-row: span 2;
-            font-size: 1rem;
-            font-family: $font-titulo;
-            font-weight: 400;
+            min-width: 600px;
+
         }
     }
 }
@@ -63,11 +71,14 @@
         border: 2px solid black;
         border-radius: 2rem;
         justify-content: stretch;
+        background-color: rgb(217, 142, 244);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.05);
             box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.425);
-            background-color: rgb(217, 142, 244);
+
         }
     }
 

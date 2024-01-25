@@ -1,22 +1,22 @@
 /* Página Productos */
 .formulario__productos form {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 
     @include mq-desktop {
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-direction: row;
     }
 }
-
 
 .producto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
     gap: 1rem;
 
     &__card {
@@ -31,6 +31,8 @@
         background-color: $color-titulo-card;
         border-radius: 15px;
         margin: 2rem 0;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.02);
@@ -68,7 +70,7 @@
         gap: 2rem;
         overflow: auto;
         margin: 1.5rem;
-        max-width: 1100px;
+        max-width: 1120px;
         margin: auto;
 
         &__card {

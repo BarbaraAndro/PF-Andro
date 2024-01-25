@@ -16,13 +16,13 @@
         padding: 1rem;
         gap: 3rem;
         width: 75vw;
-        // max-width: 600px;
         background-color: $color-titulo-card;
         border-radius: 25px;
         overflow: hidden;
         align-items: center;
         text-align: center;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
+        transition-duration: 1s;
 
         &:hover {
             transform: scale(1.05);
