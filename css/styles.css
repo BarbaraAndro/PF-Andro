@@ -258,9 +258,10 @@ header {
   border-radius: 2rem;
   justify-content: stretch;
   background-color: rgb(217, 142, 244);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.285);
 }
 .informacion__card:hover {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+  box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.504);
 }
 .informacion__titulo {
   font-size: 2rem;
