@@ -156,6 +156,7 @@
 
 .activistas {
     @extend .creadores;
+
     &__card {
         @extend .creadores__card;
     }
@@ -216,6 +217,7 @@
 
 .documentales {
     @extend .creadores;
+
     &__card {
         display: flex;
         flex-direction: column;

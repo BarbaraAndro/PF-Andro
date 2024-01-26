@@ -41,7 +41,7 @@ main {
 }
 
 footer {
-  background-image: url("../imagenes/flores-lilas3.jpg");
+  background-image: url("../imagenes/flores-lilas.jpg");
   opacity: 0.8;
   background-repeat: no-repeat;
 }
@@ -96,21 +96,16 @@ header {
   background-color: rgb(246, 214, 254);
 }
 
-header img {
+.header__img {
   width: 150px;
-}
-
-.logo {
   max-width: 5vw;
   border-radius: 30%;
 }
-
-header a {
+.header__link {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
-
-header a:hover {
+.header__link:hover {
   background-color: rgb(227, 173, 246);
   border-radius: 10px;
   color: rgb(148, 0, 212);
@@ -149,23 +144,23 @@ header a:hover {
 }
 
 .portadainicio {
-  background-image: url("../../imagenes/portadainicio.jpeg");
+  background-image: url("../imagenes/portadainicio.jpeg");
 }
 
 .portadainformacion {
-  background-image: url("../../imagenes/portadainformacion.webp");
+  background-image: url("../imagenes/portadainformacion.webp");
 }
 
 .portadaproductos {
-  background-image: url("../../imagenes/portadaproductos.webp");
+  background-image: url("../imagenes/portadaproductos.webp");
 }
 
 .portadalugares {
-  background-image: url("../../imagenes/portadalugares.webp");
+  background-image: url("../imagenes/portadalugares.webp");
 }
 
 .portadanoticias {
-  background-image: url("../../imagenes/portadanoticias.webp");
+  background-image: url("../imagenes/portadanoticias.webp");
 }
 
 .form {

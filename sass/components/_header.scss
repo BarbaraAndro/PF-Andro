@@ -5,22 +5,21 @@ header {
     background-color: rgb(246, 214, 254);
 }
 
-header img {
-    width: 150px;
-}
+.header {
+    &__img {
+        width: 150px;
+        max-width: 5vw;
+        border-radius: 30%;
+    }
 
-.logo{
-    max-width: 5vw;
-    border-radius: 30%;
-}
+    &__link {
+        font-family: $font-titulo;
+        font-size: 1rem;
 
-header a {
-    font-family: $font-titulo;
-    font-size: 2.5rem;
-}
-
-header a:hover {
-    background-color: rgb(227, 173, 246);
-    border-radius: 10px;
-    color: rgb(148, 0, 212);
+        &:hover {
+            background-color: rgb(227, 173, 246);
+            border-radius: 10px;
+            color: rgb(148, 0, 212);
+        }
+    }
 }
